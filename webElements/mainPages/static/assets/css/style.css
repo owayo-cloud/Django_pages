@@ -22,7 +22,7 @@
 
     /* Shadows and Effects */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-md: 0 4px 6px rgba(44, 62, 80, 0.1);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }
