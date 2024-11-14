@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Django Web Pages</title>
+
+    <!-- my css file -->
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     
     <!-- favicon -->
@@ -24,7 +26,38 @@
     <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
 </head>
-<body>
-    
+<body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="/" class="logo d-flex align-items-center me-auto">
+                <img src="{% static 'assets/img/logo.png' %}" alt="">
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#" class="active">Home<br></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="dropdown"><a href="#"><span>Navigation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                      <ul>
+                        <li><a href="#">Navigation 1</a></li>
+                        <li class="dropdown"><a href="#"><span>Deep Navigation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                          <ul>
+                            <li><a href="#">Deep Navigation 1</a></li>
+                            <li><a href="#">Deep Navigation 2</a></li>
+                            <li><a href="#">Deep Navigation 3</a></li>
+                            <li><a href="#">Deep Navigation 4</a></li>
+                            <li><a href="#">Deep Navigation 5</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Navigation 2</a></li>
+                        <li><a href="#">Navigation 3</a></li>
+                        <li><a href="#">Navigation 4</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
 </body>
 </html>
