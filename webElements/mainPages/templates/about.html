@@ -1,11 +1,108 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About | Us</title>
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon-16x16.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
 </head>
-<body>
-    
+<body class="index-page">
+    <header id="header" class="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="/" class="logo">
+                <img src="{% static 'assets/img/logo.png' %}" alt="Logo">
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#">Pages <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Pages 1</a></li>
+                            <li class="dropdown">
+                                <a href="#">Deep Dropdown <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Dropdown 1</a></li>
+                                    <li><a href="#">Deep Dropdown 2</a></li>
+                                    <li><a href="#">Deep Dropdown 3</a></li>
+                                    <li><a href="#">Deep Dropdown 4</a></li>
+                                    <li><a href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <a class="cta-btn d-none d-sm-block" href="">Login</a>
+        </div>
+    </header>
+    <div class="col-lg-7">
+        <h2 class="pt-0 pt-lg-5">About Our Company</h2>
+        <p class="fst-italic">We are dedicated to providing innovative solutions for our clients.</p>
+        
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tab1">
+            <p>Welcome to our company! We are a forward-thinking organization committed to excellence and innovation in everything we do.</p>
+            
+            <div class="d-flex align-items-center mt-4">
+              <i class="bi bi-check2-circle"></i>
+              <h4>Our Mission</h4>
+            </div>
+            <p>To deliver exceptional value to our clients through innovative solutions and outstanding service.</p>
+
+            <div class="d-flex align-items-center mt-4">
+              <i class="bi bi-check2-circle"></i>
+              <h4>Our Vision</h4>
+            </div>
+            <p>To be the leading provider of innovative solutions in our industry, recognized for excellence and customer satisfaction.</p>
+
+            <div class="d-flex align-items-center mt-4">
+              <i class="bi bi-check2-circle"></i>
+              <h4>Our Values</h4>
+            </div>
+            <ul>
+              <li>Integrity in all our dealings</li>
+              <li>Innovation in our solutions</li>
+              <li>Excellence in our service</li>
+              <li>Commitment to our clients</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>        
 </body>
 </html>
