@@ -28,7 +28,7 @@ To get started with this project, follow these steps:
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo-name.git`
+1. Clone the repository: `git clone https://github.com/owayo-cloud/Django_pages.git`
 2. Navigate to the project directory: `cd your-repo-name`
 3. Install the required packages: `pip install -r requirements.txt`
 4. Create a new Django project: `django-admin startproject your_project_name`
